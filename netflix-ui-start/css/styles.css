@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "netflix-sans";
+    src: url("./NetflixSans-Regular.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    background-color: #141414;
+    font-family: "netflix-sans";
+}
+
+nav {
+    font-size: 14px;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #e5e5e5;
+}
+
+.navbar-dark .navbar-nav .nav-link:not(:first-child):hover {
+    color: #b3b3b3;
+}
+
+.profile img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #ffffff transparent transparent transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile:hover .triangle {
+    transform: rotate(180deg);
+}
+
+.align-container {
+    padding-inline: 3.7rem;
+}
+
+#tv-shows {
+    position: sticky;
+    background-color: #141414;
+    min-height: 10vh;
+    top: -1px;
+    z-index: 1;
+}
+
+#tv-shows h2 {
+    font-size: 35px;
+}
+
+#tv-shows .dropdown button {
+    color: white;
+    font-size: 13px;
+    border: 1px solid white;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+    padding-block: 0.2rem;
+}
+
+#tv-shows .dropdown button:focus {
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    margin-left: 1rem;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+    background-color: #040302;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.shows-icons div:first-child {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.shows-icons div:last-child {
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    border-left: none;
+}
+
+.shows-icons div svg {
+    width: 15px;
+    height: 15px;
+    margin: 0.3rem 0.8rem;
+}
+
+.shows-icons div:last-child:hover {
+    color: white;
+    border-color: white;
+}
+
+
+section h3 {
+    font-size: 20px;
+    color: #e5e5e5;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+
+.movies-container {
+    margin-inline: -0.1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.movie-img {
+    padding-inline: 0.1rem;
+}
+
+footer {
+    font-size: 11px;
+    color: gray;
+}
+
+
+footer .icons i {
+    font-size: 22px;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 13px;
+    color: gray;
+}
+
+footer a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.service-btn {
+    background-color: transparent;
+    border: 1px solid gray;
+    font-size: 13px;
+    color: gray;
+    padding: 0.5em;
+}
+
+.service-btn:hover {
+    color: white;
+}
+
+.explore span,
+.explore i {
+    color: #54b9c5;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+    transform: translateX(-20px);
+    transition: transform 0.3s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+section:not(:first-of-type):hover .explore span {
+    visibility: visible;
+    transform: translateX(20px);
+}
+
+
+section:not(:first-of-type):hover .explore i {
+    visibility: visible;
+    transform: translateX(20px);
+}
+
+
+.card {
+    background-color: #141414;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    scale: 1.5;
+    position: absolute;
+    top: -30px;
+    -webkit-box-shadow: 0px 7px 11px -1px #000000;
+    box-shadow: 0px 7px 11px -1px #000000;
+}
+
+
+.card .volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    font-size: 25px;
+    background-color: #141414c8;
+    height: 40px;
+    width: 40px;
+    color: #b3b3b3bc;
+    border-radius: 50%;
+    border: 2px solid #b3b3b3bc;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.card .volume:hover {
+    opacity: 1;
+}
+
+.card .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: #b3b3b31e;
+    height: 35px;
+    width: 35px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #c8c4c4;
+}
+
+.card .icon-special {
+    background-color: #c8c4c4;
+}
+
+.card .icon:hover {
+    color: white;
+    border-color: white;
+}
+
+.card .icon-special:hover {
+    background-color: white;
+}
+
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 13px;
+    border-color: transparent transparent transparent #141414;
+}
+
+#match {
+    color: #46d369;
+    font-weight: bold;
+}
+
+#age {
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+}
+
+#limited {
+    font-size: 15px;
+    color: white;
+}
+
+#genre {
+    font-size: 13px;
+}
+
+
+.card-body {
+    display: none;
+}
+
+.card img+.volume {
+    display: none;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
+.card:hover .card img+.volume {
+    display: block;
+}
+
+section:not(:first-of-type) {
+    overflow: hidden;
+}

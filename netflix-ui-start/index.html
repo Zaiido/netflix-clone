@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Netflix</title>
+  <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/netflix_logo.png" alt="Netflix Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link mr-lg-3 py-0" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link mr-lg-3 py-0" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-lg-3 py-0" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-lg-3 py-0" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-lg-3 py-0" href="#">My List</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn my-2 my-sm-0 text-white mr-2" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+            <a class="text-white text-decoration-none mr-2" href="#">KIDS</a>
+            <button class="btn my-2 my-sm-0 text-white mr-2" type="submit">
+              <i class="bi bi-bell"></i>
+            </button>
+            <div class="text-white mr-2 profile d-flex align-items-center">
+              <img class="mr-2" src="./assets/avatar.png" alt="Avatar Img">
+              <div class="triangle"></div>
+            </div>
+          </form>
+        </div>
+    </nav>
+    </div>
+  </header>
+
+  <section id="tv-shows" class="d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center my-3 text-white align-container">
+        <h2 class="font-weight-bold pr-5">TV Shows</h2>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle rounded-0 mb-1" type="button" data-toggle="dropdown" aria-expanded="false">
+            Genres
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-white" href="#">Action</a>
+            <a class="dropdown-item text-white" href="#">Drama</a>
+            <a class="dropdown-item text-white" href="#">Thriller</a>
+          </div>
+        </div>
+        <div class="d-flex shows-icons ml-auto">
+          <div class="d-flex justify-content-center align-items-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon svg-icon-rows">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6H0V4H24V6ZM24 18V20H0V18H24ZM0 13H12V11H0V13Z"
+                fill="currentColor"></path>
+            </svg></i>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="svg-icon svg-icon-grid">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 3C0.447715 3 0 3.44772 0 4V10C0 10.5523 0.447715 11 1 11H10C10.5523 11 11 10.5523 11 10V4C11 3.44772 10.5523 3 10 3H1ZM1 13C0.447715 13 0 13.4477 0 14V20C0 20.5523 0.447715 21 1 21H10C10.5523 21 11 20.5523 11 20V14C11 13.4477 10.5523 13 10 13H1ZM13 4C13 3.44772 13.4477 3 14 3H23C23.5523 3 24 3.44772 24 4V10C24 10.5523 23.5523 11 23 11H14C13.4477 11 13 10.5523 13 10V4ZM14 13C13.4477 13 13 13.4477 13 14V20C13 20.5523 13.4477 21 14 21H23C23.5523 21 24 20.5523 24 20V14C24 13.4477 23.5523 13 23 13H14Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trending-now">
+    <div class="container-fluid ">
+      <div class="my-3 align-container ">
+        <div class="d-flex align-items-center mb-3 explore">
+          <h3 class="font-weight-bolder mr-2">Trending Now</h3>
+          <span class="mr-2">Explore All</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="row movies-container">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <!-- <img class="img-fluid" src="./assets/media/media0.webp" alt="Movie Image"> -->
+            <div class="card img-fluid border-0" style="width: 18rem;">
+              <img src="./assets/media/media0.webp" class="card-img-top" alt="Movie Image">
+              <div class="volume">
+                <i class="bi bi-volume-up"></i>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <div class="icon mr-2 icon-special">
+                      <div class="right-triangle"></div>
+                    </div>
+                    <div class="icon mr-2"><i class="bi bi-plus-lg"></i></div>
+                    <div class="icon mr-2"><i class="bi bi-hand-thumbs-up"></i></div>
+                  </div>
+                  <div class="ml-auto">
+                    <div class="icon"><i class="bi bi-chevron-down mt-1"></i></div>
+                  </div>
+                </div>
+                <div class="d-flex my-3 align-items-center">
+                  <span id="match">98% Match</span>
+                  <div id="age" class="px-1">16</div>
+                  <span id="limited">Limited Series</span>
+                  <i class="bi bi-badge-hd text-white"></i>
+                </div>
+                <div class="text-white" id="genre">
+                  Mistery · Action
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media1.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media2.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media3.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media4.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media5.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media18.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media21.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media22.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media23.webp" alt="Movie Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="watch-again">
+    <div class="container-fluid">
+      <div class="my-5 align-container ">
+        <div class="d-flex align-items-center mb-3 explore">
+          <h3 class="font-weight-bolder mr-2">Watch It Again</h3>
+          <span class="mr-2">Explore All</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="row movies-container">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media6.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media7.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media8.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media9.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media10.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media11.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media19.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media24.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media25.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media26.webp" alt="Movie Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="new-releases">
+    <div class="container-fluid">
+      <div class="mb-5 align-container">
+        <div class="d-flex align-items-center mb-3 explore">
+          <h3 class="font-weight-bolder mr-2">New Releases</h3>
+          <span class="mr-2">Explore All</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="row movies-container">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media12.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media13.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media14.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media15.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media16.webp" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media17.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media20.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media27.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media28.jpg" alt="Movie Image">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 movie-img">
+            <img class="img-fluid" src="./assets/media/media29.jpg" alt="Movie Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-5 mb-2">
+    <div class="container px-5">
+      <div class="row mx-5 icons text-left">
+        <div class="col-12">
+          <i class="bi bi-facebook mr-4"></i>
+          <i class="bi bi-instagram mr-4"></i>
+          <i class="bi bi-twitter mr-4"></i>
+          <i class="bi bi-youtube mr-4"></i>
+        </div>
+      </div>
+      <div class="row mx-5 my-3">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Audio Description</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Help Center</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Gift Cards</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Media Center</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Investor Relations</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Jobs</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Terms of Use</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Privacy</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Legal Notices</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Cookie Preferences</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Impressum</a>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2 ">
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+      <div class="row mx-5 my-3">
+        <div class="col-12">
+          <button class="service-btn">Service Code</button>
+        </div>
+      </div>
+      <div class="row mx-5 mt-3">
+        <div class="col-12">
+          <span> © 1997-2023 Netflix, Inc.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
