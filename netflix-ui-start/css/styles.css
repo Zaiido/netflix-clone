@@ -3,6 +3,12 @@
     src: url("./NetflixSans-Regular.otf") format("opentype");
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #141414;
@@ -97,6 +103,7 @@ nav {
     color: #b3b3b3;
     border: 1px solid #b3b3b3;
     border-left: none;
+    cursor: pointer;
 }
 
 .shows-icons div svg {
@@ -189,15 +196,15 @@ section:not(:first-of-type):hover .explore i {
 
 .card {
     background-color: #141414;
-    z-index: 2;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .card:hover {
     scale: 1.5;
+    z-index: 2;
     position: absolute;
-    top: -30px;
+    top: 8px;
     -webkit-box-shadow: 0px 7px 11px -1px #000000;
     box-shadow: 0px 7px 11px -1px #000000;
 }
@@ -208,12 +215,12 @@ section:not(:first-of-type):hover .explore i {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 50%;
+    top: -30%;
     right: 5%;
     font-size: 25px;
     background-color: #141414c8;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     color: #b3b3b3bc;
     border-radius: 50%;
     border: 2px solid #b3b3b3bc;
@@ -259,43 +266,72 @@ section:not(:first-of-type):hover .explore i {
     border-color: transparent transparent transparent #141414;
 }
 
-#match {
+.match {
     color: #46d369;
     font-weight: bold;
+    font-size: 11px;
 }
 
-#age {
+.age {
     border: 1px solid white;
     color: white;
-    font-size: 14px;
+    font-size: 11px;
 }
 
-#limited {
-    font-size: 15px;
+.limited {
+    font-size: 11px;
     color: white;
 }
 
-#genre {
-    font-size: 13px;
+.genre {
+    font-size: 10px;
 }
 
 
 .card-body {
     display: none;
-}
-
-.card img+.volume {
-    display: none;
+    position: relative;
 }
 
 .card:hover .card-body {
     display: block;
 }
 
-.card:hover .card img+.volume {
-    display: block;
+
+.carousel-inner {
+    overflow: visible;
 }
 
-section:not(:first-of-type) {
-    overflow: hidden;
+.carousel-control-next {
+    width: 80px;
+    right: -75px;
+}
+
+.carousel-control-prev {
+    width: 80px;
+    display: none;
+}
+
+.carousel-control-next:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.36207986612613796) 0%, rgba(0, 0, 0, 0.6646008745294993) 33%, rgba(0, 0, 0, 1) 100%);
+}
+
+.carousel-control-prev:hover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.36207986612613796) 0%, rgba(0, 0, 0, 0.6646008745294993) 33%, rgba(0, 0, 0, 1) 100%);
+}
+
+.carousel-left {
+    position: relative;
+    left: -200px;
+}
+
+.carousel-control-prev-left {
+    display: block;
+    left: 120px;
+}
+
+.carousel-control-next-right {
+    right: -280px;
 }
