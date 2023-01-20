@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backoffice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-0">
+            <div class="container-fluid">
+                <a class="navbar-category" href="#">
+                    <img style="height: 50px;" src="./assets/netflix_logo.png" alt="Netflix Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mr-lg-3 py-0" href="index.html">Home</a>
+                        </li>
+                        <li class="d-none nav-item backoffice-link">
+                            <a class="nav-link mr-lg-3 py-0" href="backoffice.html">Back</a>
+                        </li>
+                </div>
+        </nav>
+        </div>
+        <div class="container mt-2">
+            <div class="alert d-none alert-danger alert-dismissible fade show" role="alert">
+                <strong>Upss!</strong> <span></span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="alert d-none alert-success alert-dismissible fade show" role="alert">
+                <span></span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container my-5">
+        <div class="form-container">
+            <h2 class="mb-5">Movie:</h2>
+            <form>
+                <div class="form-group row">
+                    <label for="movie-name" class="col-sm-2 col-form-label">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="movie-name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="movie-description" class="col-sm-2 col-form-label">Description:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="movie-description">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="movie-category" class="col-sm-2 col-form-label">Category:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="movie-category">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="movie-image" class="col-sm-2 col-form-label">Image URL:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="movie-image">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button onclick="addMovie(event)" type="submit" class="btn btn-primary">Add Movie</button>
+                    <button onclick="editMovie(event)" type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="form-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">_id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="js/backoffice.js"></script>
+</body>
+
+</html>

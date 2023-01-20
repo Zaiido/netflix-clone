@@ -13,6 +13,7 @@ body {
     margin: 0;
     background-color: #141414;
     font-family: "netflix-sans";
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -334,4 +335,20 @@ section:not(:first-of-type):hover .explore i {
 
 .carousel-control-next-right {
     right: -280px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#top-movies .card:hover {
+    scale: 1.3;
+    transition: all 0.2s ease;
+}
+
+#top-movies .card .volume {
+    top: -20%;
 }
